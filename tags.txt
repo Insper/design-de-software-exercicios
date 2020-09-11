@@ -1,0 +1,14 @@
+arquivo
+classe
+dicionário
+fatiamento
+for
+função
+if
+input
+lista
+loop
+prova
+string
+variáveis
+while
