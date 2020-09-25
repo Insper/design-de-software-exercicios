@@ -1,0 +1,7 @@
+{
+    "titulo": "Anagrama",
+    "publicado": true,
+    "terminal": true,
+    "nome_funcao": "anagrama",
+    "tags": "string,loop"
+}

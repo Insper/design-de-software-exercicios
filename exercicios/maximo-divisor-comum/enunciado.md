@@ -1,0 +1,1 @@
+Faça uma função para encontrar o máximo divisor comum entre dois números
