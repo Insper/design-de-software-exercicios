@@ -1,0 +1,1 @@
+Faça uma função que, dado um número inteiro qualquer maior do que 1, encontra seu maior fator primo.

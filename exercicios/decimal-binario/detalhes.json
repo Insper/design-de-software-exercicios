@@ -1,0 +1,7 @@
+{
+    "titulo": "Decimal para binário",
+    "publicado": true,
+    "terminal": true,
+    "nome_funcao": "decimal_para_binario",
+    "tags": "if,função"
+}
