@@ -1,0 +1,7 @@
+{
+    "titulo": "Pacotes no correio",
+    "publicado": true,
+    "terminal": true,
+    "nome_funcao": "pacotes_correio",
+    "tags": "loop,if"
+}

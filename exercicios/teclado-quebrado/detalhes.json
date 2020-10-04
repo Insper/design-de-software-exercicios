@@ -1,0 +1,7 @@
+{
+    "titulo": "Teclado quebrado",
+    "publicado": true,
+    "terminal": true,
+    "nome_funcao": "conserta_teclado",
+    "tags": "string"
+}

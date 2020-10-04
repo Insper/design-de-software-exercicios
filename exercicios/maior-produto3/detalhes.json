@@ -1,0 +1,7 @@
+{
+    "titulo": "Maior produto de três",
+    "publicado": true,
+    "terminal": true,
+    "nome_funcao": "maior_produto3",
+    "tags": "loop"
+}

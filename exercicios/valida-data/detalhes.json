@@ -1,0 +1,7 @@
+{
+    "titulo": "Valida data",
+    "publicado": true,
+    "terminal": true,
+    "nome_funcao": "valida_data",
+    "tags": "string,fatiamento,if"
+}
