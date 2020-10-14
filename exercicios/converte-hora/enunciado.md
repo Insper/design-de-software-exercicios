@@ -1,0 +1,2 @@
+De manhã nem o formato da hora do relógio parece bacana... Faça um programa que converte o formato de 24 horas para a notação de 12 horas. Por exemplo, o horário “15:30” é convertido em “03:30 PM”. De maneira análoga, ”09:45” vira “09:45 AM”
+Considere que a função sempre irá receber um formato de horário válido (string), como os do exemplo.

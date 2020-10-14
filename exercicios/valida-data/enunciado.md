@@ -1,0 +1,3 @@
+Em um formulário, o campo da data é salvo como uma string no seguinte formato: data = “dd/mm/yyyy”, sendo os dias, meses e anos números inteiros positivos.
+
+Faça uma função que recebe uma string como a indicada e devolve True se a data for válida ou False, caso contrário. Na validação, você deve considerar a quantidade de mesese de dias no mês. Lembre-se de que alguns meses têm 30 enquanto outros possuem 31 dias. Também é importante levar em conta os casos de fevereiro e anos bissextos! 

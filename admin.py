@@ -162,7 +162,6 @@ def aplica_teste(arq_codigo, arq_testes, nome_funcao):
     esperado = 'solucao' in str(arq_codigo)
     assert esperado == resultado.success, f'Resultado diferente do esperado para o arquivo {arq_codigo}'
 
-
 def carrega_arquivo(arquivo):
     if not arquivo.is_file():
         raise AssertionError(f'Arquivo {arquivo} não existe.')
