@@ -1,0 +1,7 @@
+{
+    "titulo": "Valor do troco",
+    "publicado": true,
+    "terminal": true,
+    "nome_funcao": "calcula_troco",
+    "tags": "loop"
+}
