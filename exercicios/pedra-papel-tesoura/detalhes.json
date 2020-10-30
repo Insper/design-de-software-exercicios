@@ -1,0 +1,7 @@
+{
+    "titulo": "Pedra, papel ou tesoura?",
+    "publicado": true,
+    "terminal": true,
+    "nome_funcao": "pedra_papel_tesoura",
+    "tags": "if"
+}
