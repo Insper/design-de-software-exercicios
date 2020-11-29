@@ -1,0 +1,7 @@
+{
+    "terminal": true,
+    "tags": "string,fatiamento,if",
+    "title": "Valida data",
+    "published": true,
+    "function_name": "valida_data"
+}

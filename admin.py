@@ -10,170 +10,170 @@ from cmd_utils import success, danger, info
 
 
 CUR_DIR = Path(__file__).parent
-EXERCICIOS = CUR_DIR / 'exercicios'
-DETALHES = 'detalhes.json'
-ENUNCIADO = 'enunciado.md'
-TESTES = 'testes.py'
+CHALLENGES = CUR_DIR / 'challenges'
+DETAILS = 'details.json'
+QUESTION = 'question.md'
+TESTS = 'tests.py'
 with open(CUR_DIR / 'tags.txt') as f:
     TAGS = [t for t in f.read().split() if t]
 
 
-TEMPLATE_DETALHES = '''{
-    "titulo": "",
-    "publicado": true,
+TEMPLATE_DETAILS = '''{
+    "title": "",
+    "published": true,
     "terminal": true,
-    "nome_funcao": null,
+    "function_name": null,
     "tags": ""
 }
 '''
 
-TEMPLATE_TESTES = '''"""
-Consulte a documentação do strtest para mais detalhes: https://github.com/Insper/python-string-test-runner
+TEMPLATE_TESTS = '''"""
+Read strtest docs for more details: https://github.com/Insper/python-string-test-runner
 
-Guia rápido:
+Quick Guide:
 ===========
-O TestCaseWrapper possui os seguintes atributos:
-    - function: função fornecida pelo usuário
-    - program: função que executa o programa fornecido pelo usuário
-    - module: arquivo fornecido pelo usuário carregado como um módulo Python
-Asserts úteis:
+TestCaseWrapper has the following attributes:
+    - function: function given by the user
+    - program: function that executes the program given by the user
+    - module: python module loaded from the file given by the user
+Useful asserts:
     - assert_similar(self, string1, string2, dist_max=1, case_sensitive=False, msg=None)
     - assert_printed(self, value, index=None, msg=None)
     - assert_printed_all(self, values, msg=None, **kwargs)
-Mocks (todas as funções tem os atributos calls, args e kwargs, que guardam a quantidade de chamadas realizadas e os argumentos):
-    - mock_print: atributo printed guarda a lista de strings impressas
-    - mock_input: atributo input_list recebe uma sequência de entradas a serem utilizadas
-    - mock_open: atributo opened é uma lista de arquivos que não foram fechados e é possível adicionar arquivos falsos no dicionário files (chave é o nome do arquivo e o valor é o seu conteúdo)
-    - mock_random: chaves são tuplas com os argumentos esperados e valores são sequências de números
+Mocks (all functions have the attributes calls, args, and kwargs, that store the call count and arguments):
+    - mock_print: printed attribute stores a list of printed strings
+    - mock_input: set input_list with a sequence of inputs to be used
+    - mock_open: the attribute opened is a list of files that have not been closed and it is possible to add mock files in the dictionary attribute 'files' (keys are the filenames and values are their content)
+    - mock_random: keys are tuples with the expected arguments and the values are sequences of numbers
 
-Se for implementar os métodos setUpClass, setUp e tearDown lembre-se de chamar a função da classe mãe.
+If you implement the methods setUpClass, setUp, or tearDown, remember to call the superclass implementation.
 """
 from strtest import str_test
 
 
 class TestCase(str_test.TestCaseWrapper):
-    TIMEOUT = 3  # Segundos
+    TIMEOUT = 3  # Seconds
 
     def test_1(self):
-        # Implemente quantas funções de teste forem necessárias. Basta que o nome do método comece com test_
+        # Implement as many test functions as you need. You just need to start the method names with test_
         pass
 '''
 
 
-@click.group(help='Administração dos exercícios de Design de Software.')
+@click.group(help='Admin for Software Design challenges.')
 def cli():
     pass
 
 
-@cli.command(help='Criar novo exercício.')
+@cli.command(help='Create new challenge.')
 @click.argument('slug')
-def novo(slug):
-    info('Criando exercício', slug)
-    ex_dir = EXERCICIOS / slug
-    if ex_dir.is_dir():
-        danger(f'Já existe um exercício chamado {slug}')
+def new(slug):
+    info('Creating challenge', slug)
+    ch_dir = CHALLENGES / slug
+    if ch_dir.is_dir():
+        danger(f'There is already a challenge called {slug}')
         sys.exit()
 
-    os.mkdir(ex_dir)
-    cria_arquivo(ex_dir / DETALHES, TEMPLATE_DETALHES)
-    cria_arquivo(ex_dir / ENUNCIADO)
-    cria_arquivo(ex_dir / TESTES, TEMPLATE_TESTES)
-    cria_arquivo(ex_dir / 'solucao.py')
-    cria_arquivo(ex_dir / 'errado.py')
+    os.mkdir(ch_dir)
+    create_file(ch_dir / DETAILS, TEMPLATE_DETAILS)
+    create_file(ch_dir / QUESTION)
+    create_file(ch_dir / TESTS, TEMPLATE_TESTS)
+    create_file(ch_dir / 'solution.py')
+    create_file(ch_dir / 'wrong.py')
 
 
-@cli.command(help='Executar testes. Nome do teste a ser executado é opcional.')
-@click.argument('nome_teste', default=None, required=False)
-def teste(nome_teste):
-    if nome_teste:
-        if not (EXERCICIOS / nome_teste).is_dir():
-            danger(f'O exercício {nome_teste} não existe.')
+@cli.command(help='Run tests and validations. The challenge name is optional.')
+@click.argument('challenge_name', default=None, required=False)
+def validate(challenge_name):
+    if challenge_name:
+        if not (CHALLENGES / challenge_name).is_dir():
+            danger(f'The challenge {challenge_name} does not exist.')
             sys.exit()
-        valida_exercicio(EXERCICIOS / nome_teste)
+        validate_challenge(CHALLENGES / challenge_name)
     else:
-        info('Testando todos os exercícios')
+        info('Testing all challenges')
         ok = True
-        for ex_dir in EXERCICIOS.iterdir():
-            if not ex_dir.is_dir(): continue
-            if not valida_exercicio(ex_dir):
+        for ch_dir in CHALLENGES.iterdir():
+            if not ch_dir.is_dir(): continue
+            if not validate_challenge(ch_dir):
                 ok = False
         if ok:
-            success('Tudo ok!')
+            success('Everything ok!')
         else:
-            danger('Falhou em alguma validação')
+            danger('Failed for some validation')
 
 
-def valida_exercicio(ex_dir):
-    info('Testando exercício', ex_dir)
+def validate_challenge(ch_dir):
+    info('Validating challenge', ch_dir)
     ok = True
     try:
-        detalhes = valida_detalhes(ex_dir)
-        valida_enunciado(ex_dir)
-        aplica_testes(ex_dir, detalhes.get('nome_funcao'))
+        details = validate_details(ch_dir)
+        validate_question(ch_dir)
+        run_tests_for_challenge(ch_dir, details.get('function_name'))
     except AssertionError as e:
-        danger('Erro de validação:', e)
+        danger('Validation error:', e)
         ok = False
     if ok:
         success("OK")
     else:
-        danger('FALHA')
+        danger('FAIL')
     return ok
 
 
-def valida_detalhes(ex_dir):
-    arq_detalhes = ex_dir / DETALHES
-    detalhes_str = carrega_arquivo(arq_detalhes)
+def validate_details(ch_dir):
+    details_file = ch_dir / DETAILS
+    details_str = load_file(details_file)
     try:
-        detalhes = json.loads(detalhes_str)
+        details = json.loads(details_str)
     except json.decoder.JSONDecodeError:
-        raise AssertionError(f'Arquivo {arq_detalhes} não é um JSON válido.')
-    assert isinstance(detalhes, dict), f'Arquivo {arq_detalhes} deveria ser um dicionário em formato JSON.'
-    assert detalhes.get('titulo'), f'Arquivo {arq_detalhes} deveria conter a chave "titulo".'
-    assert detalhes.get('publicado'), f'Arquivo {arq_detalhes} deveria conter a chave "publicado".'
-    assert detalhes.get('terminal'), f'Arquivo {arq_detalhes} deveria conter a chave "terminal".'
-    assert detalhes.get('tags'), f'Arquivo {arq_detalhes} deveria conter a chave "tags".'
-    tags = detalhes['tags'].split(',')
+        raise AssertionError(f'File {details_file} is not a valid JSON.')
+    assert isinstance(details, dict), f'File {details_file} should be a JSON dictionary.'
+    assert details.get('title'), f'File {details_file} should have a key "title".'
+    assert details.get('published'), f'File {details_file} should have a key "published".'
+    assert details.get('terminal'), f'File {details_file} should have a key "terminal".'
+    assert details.get('tags'), f'File {details_file} should have a key "tags".'
+    tags = details['tags'].split(',')
     for tag in tags:
         if tag:
-            assert tag in TAGS, f'A tag {tag} não existe'
-    return detalhes
+            assert tag in TAGS, f'The tag {tag} does not exist'
+    return details
 
 
-def valida_enunciado(ex_dir):
-    arq_enunciado = ex_dir / ENUNCIADO
-    enunciado = carrega_arquivo(arq_enunciado)
-    assert enunciado.strip(), f'Arquivo {arq_enunciado} não deveria estar vazio.'
+def validate_question(ch_dir):
+    question_file = ch_dir / QUESTION
+    question = load_file(question_file)
+    assert question.strip(), f'File {question_file} should not be empty.'
 
 
-def aplica_testes(ex_dir, nome_funcao):
-    corretos = list(ex_dir.glob('solucao*.py'))
-    errados = list(ex_dir.glob('errado*.py'))
-    arq_testes = ex_dir / TESTES
-    assert corretos, 'Deveria ter pelo menos uma solução correta.'
-    assert errados, 'Deveria ter pelo menos uma solução incorreta.'
-    for arq_codigo in corretos + errados:
-        aplica_teste(arq_codigo, arq_testes, nome_funcao)
+def run_tests_for_challenge(ch_dir, function_name):
+    correct = list(ch_dir.glob('solution*.py'))
+    wrong = list(ch_dir.glob('wrong*.py'))
+    test_files = ch_dir / TESTS
+    assert correct, 'There should be at least one correct solution file.'
+    assert wrong, 'There should be at least one wrong solution file.'
+    for code_file in correct + wrong:
+        run_test(code_file, test_files, function_name)
 
 
-def aplica_teste(arq_codigo, arq_testes, nome_funcao):
-    codigo = carrega_arquivo(arq_codigo)
-    testes = carrega_arquivo(arq_testes)
-    resultado = str_test.run_tests(codigo, testes, nome_funcao)
-    esperado = 'solucao' in str(arq_codigo)
-    assert esperado == resultado.success, f'Resultado diferente do esperado para o arquivo {arq_codigo}'
+def run_test(code_file, test_file, function_name):
+    code = load_file(code_file)
+    tests = load_file(test_file)
+    result = str_test.run_tests(code, tests, function_name)
+    expected = 'solution' in str(code_file)
+    assert expected == result.success, f'Result was different than the expected for the file {code_file}'
 
-def carrega_arquivo(arquivo):
-    if not arquivo.is_file():
-        raise AssertionError(f'Arquivo {arquivo} não existe.')
-    with open(arquivo) as f:
+def load_file(file_path):
+    if not file_path.is_file():
+        raise AssertionError(f'File {file_path} does not exist.')
+    with open(file_path) as f:
         return f.read()
 
 
-def cria_arquivo(arquivo, conteudo=None):
-    if not conteudo:
-        conteudo = ''
-    with open(arquivo, 'w') as f:
-        f.write(conteudo)
+def create_file(filename, content=None):
+    if not content:
+        content = ''
+    with open(filename, 'w') as f:
+        f.write(content)
 
 
 if __name__ == "__main__":

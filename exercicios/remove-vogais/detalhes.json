@@ -1,7 +1,0 @@
-{
-    "titulo": "Removedor de vogais",
-    "publicado": true,
-    "terminal": true,
-    "nome_funcao": "remove_vogais",
-    "tags": "string,loop"
-}

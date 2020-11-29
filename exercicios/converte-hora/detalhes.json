@@ -1,7 +1,0 @@
-{
-    "titulo": "Hora de acordar...",
-    "publicado": true,
-    "terminal": true,
-    "nome_funcao": "converteHora",
-    "tags": "string"
-}

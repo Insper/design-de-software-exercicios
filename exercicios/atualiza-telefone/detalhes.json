@@ -1,7 +1,0 @@
-{
-    "titulo": "Telefone antigo",
-    "publicado": true,
-    "terminal": true,
-    "nome_funcao": "atualiza_telefone",
-    "tags": "string"
-}

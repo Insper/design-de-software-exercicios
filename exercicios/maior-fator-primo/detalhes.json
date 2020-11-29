@@ -1,7 +1,0 @@
-{
-    "titulo": "Maior fator primo",
-    "publicado": true,
-    "terminal": true,
-    "nome_funcao": "maior_fator_primo",
-    "tags": "loop"
-}

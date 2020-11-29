@@ -1,7 +1,0 @@
-{
-    "titulo": "CAPS LOCK",
-    "publicado": true,
-    "terminal": true,
-    "nome_funcao": "capsLock",
-    "tags": "string"
-}

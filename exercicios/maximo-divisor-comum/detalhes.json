@@ -1,7 +1,0 @@
-{
-    "titulo": "Máximo divisor comum",
-    "publicado": true,
-    "terminal": true,
-    "nome_funcao": "maximo_divisor_comum",
-    "tags": "loop"
-}

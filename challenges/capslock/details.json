@@ -1,0 +1,7 @@
+{
+    "terminal": true,
+    "tags": "string",
+    "title": "CAPS LOCK",
+    "published": true,
+    "function_name": "capsLock"
+}
