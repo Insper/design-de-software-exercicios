@@ -11,6 +11,7 @@ from cmd_utils import success, danger, info
 
 CUR_DIR = Path(__file__).parent
 CHALLENGES = CUR_DIR / 'challenges'
+RAW_DIR = 'raw'
 DETAILS = 'details.json'
 QUESTION = 'question.md'
 TESTS = 'tests.py'
@@ -75,6 +76,7 @@ def new(slug):
         sys.exit()
 
     os.mkdir(ch_dir)
+    (ch_dir / RAW_DIR / slug).mkdir(parents=True, exist_ok=True)
     create_file(ch_dir / DETAILS, TEMPLATE_DETAILS)
     create_file(ch_dir / QUESTION)
     create_file(ch_dir / TESTS, TEMPLATE_TESTS)
