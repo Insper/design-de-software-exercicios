@@ -16,7 +16,7 @@ DETAILS = 'details.json'
 QUESTION = 'question.md'
 TESTS = 'tests.py'
 with open(CUR_DIR / 'tags.txt') as f:
-    TAGS = [t for t in f.read().split() if t]
+    TAGS = [t.split(',')[1] for t in f.read().split() if t and len(t.split(',')) == 3]
 
 
 TEMPLATE_DETAILS = '''{
@@ -24,7 +24,7 @@ TEMPLATE_DETAILS = '''{
     "published": true,
     "terminal": true,
     "function_name": null,
-    "tags": ""
+    "tag": null
 }
 '''
 
@@ -133,11 +133,9 @@ def validate_details(ch_dir):
     assert details.get('title'), f'File {details_file} should have a key "title".'
     assert details.get('published'), f'File {details_file} should have a key "published".'
     assert details.get('terminal'), f'File {details_file} should have a key "terminal".'
-    assert details.get('tags'), f'File {details_file} should have a key "tags".'
-    tags = details['tags'].split(',')
-    for tag in tags:
-        if tag:
-            assert tag in TAGS, f'The tag {tag} does not exist'
+    assert details.get('tag'), f'File {details_file} should have a key "tag".'
+    tag = details['tag']
+    assert tag in TAGS, f'The tag {tag} does not exist'
     return details
 
 

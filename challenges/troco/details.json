@@ -1,7 +1,7 @@
 {
-    "terminal": true,
-    "tags": "loop",
-    "title": "Valor do troco",
-    "published": true,
-    "function_name": "calcula_troco"
+  "terminal": true,
+  "tag": "laco",
+  "title": "Valor do troco",
+  "published": true,
+  "function_name": "calcula_troco"
 }

@@ -1,7 +1,7 @@
 {
-    "terminal": true,
-    "tags": "dicionário",
-    "title": "Receita de bolo",
-    "published": true,
-    "function_name": "converte_receita"
+  "terminal": true,
+  "tag": "dicionario",
+  "title": "Receita de bolo",
+  "published": true,
+  "function_name": "converte_receita"
 }

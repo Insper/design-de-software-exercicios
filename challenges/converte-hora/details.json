@@ -1,7 +1,7 @@
 {
-    "terminal": true,
-    "tags": "string",
-    "title": "Hora de acordar...",
-    "published": true,
-    "function_name": "converteHora"
+  "terminal": true,
+  "tag": "string",
+  "title": "Hora de acordar...",
+  "published": true,
+  "function_name": "converteHora"
 }

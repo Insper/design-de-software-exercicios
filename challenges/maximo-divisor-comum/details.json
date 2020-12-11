@@ -1,7 +1,7 @@
 {
-    "terminal": true,
-    "tags": "loop",
-    "title": "Máximo divisor comum",
-    "published": true,
-    "function_name": "maximo_divisor_comum"
+  "terminal": true,
+  "tag": "laco",
+  "title": "Máximo divisor comum",
+  "published": true,
+  "function_name": "maximo_divisor_comum"
 }

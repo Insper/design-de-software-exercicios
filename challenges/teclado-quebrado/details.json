@@ -1,7 +1,7 @@
 {
-    "terminal": true,
-    "tags": "string",
-    "title": "Teclado quebrado",
-    "published": true,
-    "function_name": "conserta_teclado"
+  "terminal": true,
+  "tag": "string",
+  "title": "Teclado quebrado",
+  "published": true,
+  "function_name": "conserta_teclado"
 }

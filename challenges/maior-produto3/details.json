@@ -1,7 +1,7 @@
 {
-    "terminal": true,
-    "tags": "loop",
-    "title": "Maior produto de três",
-    "published": true,
-    "function_name": "maior_produto3"
+  "terminal": true,
+  "tag": "laco",
+  "title": "Maior produto de três",
+  "published": true,
+  "function_name": "maior_produto3"
 }

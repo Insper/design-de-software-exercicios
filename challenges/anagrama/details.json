@@ -1,7 +1,7 @@
 {
-    "terminal": true,
-    "tags": "string,loop",
-    "title": "Anagrama",
-    "published": true,
-    "function_name": "anagrama"
+  "terminal": true,
+  "tag": "string",
+  "title": "Anagrama",
+  "published": true,
+  "function_name": "anagrama"
 }

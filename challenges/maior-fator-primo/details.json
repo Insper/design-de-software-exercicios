@@ -1,7 +1,7 @@
 {
-    "terminal": true,
-    "tags": "loop",
-    "title": "Maior fator primo",
-    "published": true,
-    "function_name": "maior_fator_primo"
+  "terminal": true,
+  "tag": "laco",
+  "title": "Maior fator primo",
+  "published": true,
+  "function_name": "maior_fator_primo"
 }

@@ -1,7 +1,7 @@
 {
-    "terminal": true,
-    "tags": "string,loop",
-    "title": "Removedor de vogais",
-    "published": true,
-    "function_name": "remove_vogais"
+  "terminal": true,
+  "tag": "string",
+  "title": "Removedor de vogais",
+  "published": true,
+  "function_name": "remove_vogais"
 }

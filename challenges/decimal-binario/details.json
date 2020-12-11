@@ -1,7 +1,7 @@
 {
-    "terminal": true,
-    "tags": "if,função",
-    "title": "Decimal para binário",
-    "published": true,
-    "function_name": "decimal_para_binario"
+  "terminal": true,
+  "tag": "laco",
+  "title": "Decimal para binário",
+  "published": true,
+  "function_name": "decimal_para_binario"
 }

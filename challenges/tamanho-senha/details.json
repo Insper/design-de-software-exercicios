@@ -1,7 +1,7 @@
 {
-    "terminal": true,
-    "tags": "string",
-    "title": "Tamanho das senhas",
-    "published": true,
-    "function_name": "tamanho_minimo"
+  "terminal": true,
+  "tag": "string",
+  "title": "Tamanho das senhas",
+  "published": true,
+  "function_name": "tamanho_minimo"
 }

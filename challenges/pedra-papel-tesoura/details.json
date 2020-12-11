@@ -1,7 +1,7 @@
 {
-    "terminal": true,
-    "tags": "if",
-    "title": "Pedra, papel ou tesoura?",
-    "published": true,
-    "function_name": "pedra_papel_tesoura"
+  "terminal": true,
+  "tag": "if",
+  "title": "Pedra, papel ou tesoura?",
+  "published": true,
+  "function_name": "pedra_papel_tesoura"
 }
