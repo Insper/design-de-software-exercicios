@@ -1,6 +1,6 @@
 {
   "terminal": true,
-  "tag": "string",
+  "concept": "string",
   "title": "Removedor de vogais",
   "published": true,
   "function_name": "remove_vogais"

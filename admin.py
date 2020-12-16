@@ -15,8 +15,8 @@ RAW_DIR = 'raw'
 DETAILS = 'details.json'
 QUESTION = 'question.md'
 TESTS = 'tests.py'
-with open(CUR_DIR / 'tags.txt') as f:
-    TAGS = [t.split(',')[1] for t in f.read().split() if t and len(t.split(',')) == 3]
+with open(CUR_DIR / 'concepts.txt') as f:
+    CONCEPTS = [t.split(',')[1] for t in f.read().split() if t and len(t.split(',')) == 3]
 
 
 TEMPLATE_DETAILS = '''{
@@ -24,7 +24,7 @@ TEMPLATE_DETAILS = '''{
     "published": true,
     "terminal": true,
     "function_name": null,
-    "tag": null
+    "concept": null
 }
 '''
 
@@ -133,9 +133,9 @@ def validate_details(ch_dir):
     assert details.get('title'), f'File {details_file} should have a key "title".'
     assert details.get('published'), f'File {details_file} should have a key "published".'
     assert details.get('terminal'), f'File {details_file} should have a key "terminal".'
-    assert details.get('tag'), f'File {details_file} should have a key "tag".'
-    tag = details['tag']
-    assert tag in TAGS, f'The tag {tag} does not exist'
+    assert details.get('concept'), f'File {details_file} should have a key "concept".'
+    concept = details['concept']
+    assert concept in CONCEPTS, f'The concept {concept} does not exist'
     return details
 
 

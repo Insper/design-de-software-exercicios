@@ -1,6 +1,6 @@
 {
   "terminal": true,
-  "tag": "laco",
+  "concept": "laco",
   "title": "Valor do troco",
   "published": true,
   "function_name": "calcula_troco"

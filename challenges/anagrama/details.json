@@ -1,6 +1,6 @@
 {
   "terminal": true,
-  "tag": "string",
+  "concept": "string",
   "title": "Anagrama",
   "published": true,
   "function_name": "anagrama"

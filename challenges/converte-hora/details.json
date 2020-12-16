@@ -1,6 +1,6 @@
 {
   "terminal": true,
-  "tag": "string",
+  "concept": "string",
   "title": "Hora de acordar...",
   "published": true,
   "function_name": "converteHora"

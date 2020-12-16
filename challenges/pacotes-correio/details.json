@@ -1,6 +1,6 @@
 {
   "terminal": true,
-  "tag": "laco",
+  "concept": "laco",
   "title": "Pacotes no correio",
   "published": true,
   "function_name": "pacotes_correio"

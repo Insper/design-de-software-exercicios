@@ -1,6 +1,6 @@
 {
   "terminal": true,
-  "tag": "dicionario",
+  "concept": "dicionario",
   "title": "Ficou de DP?",
   "published": true,
   "function_name": "notas_dp"

@@ -1,6 +1,6 @@
 {
   "terminal": true,
-  "tag": "if",
+  "concept": "if",
   "title": "Pedra, papel ou tesoura?",
   "published": true,
   "function_name": "pedra_papel_tesoura"
