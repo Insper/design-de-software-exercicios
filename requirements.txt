@@ -1,3 +1,4 @@
 strtest
+autotracer
 click
 colorama

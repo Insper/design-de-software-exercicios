@@ -1,6 +1,22 @@
 import click
 
 
+def load_file(file_path, msg=None):
+    if not msg:
+        msg = f'File {file_path} does not exist.'
+    if not file_path.is_file():
+        raise AssertionError(msg)
+    with open(file_path) as f:
+        return f.read()
+
+
+def create_file(filename, content=None):
+    if not content:
+        content = ''
+    with open(filename, 'w') as f:
+        f.write(content)
+
+
 def echo_cmd(cmd, txt, color):
     click.echo(f'{color(cmd)}: {txt}')
 
