@@ -21,6 +21,7 @@ def build_details(concept, title, published=True):
 @click.option('--title', prompt='Title of the trace challenge')
 @click.option('--published/--no-published', default=True)
 def new_trace(slug, concept, title, published):
+    concept = CONCEPTS[concept-1]
     info('Creating trace challenge', slug)
     ch_dir = TRACES / slug
     if ch_dir.is_dir():
