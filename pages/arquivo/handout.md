@@ -50,6 +50,8 @@ Os testes deste handout utilizam arquivos externos. Por esse motivo, não faz mu
 
 Teste o programa acima no seu computador. Para isso, crie um arquivo chamado `#!python arquivo_texto.txt` e escreva alguma coisa (pode ser no Spyder, VS Code, ou qualquer editor de texto de sua preferência - **não use o Word, pois ele gera um arquivo muito mais complicado**). Salve o programa acima **na mesma pasta**. Execute seu programa. Ele deve imprimir no terminal o conteúdo do seu arquivo.
 
+:::
+
 :::admonition{type=danger}
 
 #### Caminho (*path*) do arquivo
@@ -57,8 +59,6 @@ Teste o programa acima no seu computador. Para isso, crie um arquivo chamado `#!
 Quando estamos trabalhando com arquivos é comum obtermos o erro `#!python FileNotFoundError`. Ele ocorre quando tentamos abrir (`#!python open()`) um arquivo que não existe. É importante que o arquivo que você está tentando abrir esteja na mesma pasta que contém o seu programa.
 
 É possível abrir arquivos localizados em outras pastas do seu computador, mas nesse caso é necessário especificar o caminho do arquivo, ou seja, qual é a sequência de pastas que devem ser percorridas para se localizar esse arquivo.
-
-:::
 
 :::
 
