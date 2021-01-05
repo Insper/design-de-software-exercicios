@@ -5,7 +5,7 @@ import os
 from autotracer.auto_tracer import AutoTracer
 
 from config import TRACES, DETAILS, CONCEPTS, TRACE_CODE, TRACE_DATA
-from cmd_utils import success, danger, info, create_file, load_file
+from cmd_utils import success, danger, info, create_file, load_file, choose_concept
 
 
 def build_details(concept, title, published=True):
@@ -17,7 +17,7 @@ def build_details(concept, title, published=True):
 
 
 @click.option('--slug', prompt='Trace slug')
-@click.option('--concept', prompt='Select the concept:\n' + '\n'.join(f'{i + 1}) {c}' for i, c in enumerate(CONCEPTS)) + '\nChoice', type=click.IntRange(1, len(CONCEPTS)+1))
+@choose_concept
 @click.option('--title', prompt='Title of the trace challenge')
 @click.option('--published/--no-published', default=True)
 def new_trace(slug, concept, title, published):

@@ -1,4 +1,6 @@
+import os
 import click
+from config import CONCEPTS
 
 
 def load_file(file_path, msg=None):
@@ -15,6 +17,15 @@ def create_file(filename, content=None):
         content = ''
     with open(filename, 'w') as f:
         f.write(content)
+
+
+def open_in_editor(filename):
+    try:
+        with open('.open_cmd') as f:
+            open_cmd = f.read().strip()
+    except FileNotFoundError:
+        danger('File .open_cmd does not exist. Create one and write the open command (e.g. code, gedit, etc.)')
+    os.system(f'{open_cmd} {filename} &')
 
 
 def echo_cmd(cmd, txt, color):
@@ -36,6 +47,12 @@ def _make_cmd(color):
         else:
             click.echo(color(cmd))
     return cmd
+
+
+def choose_concept(func):
+    concept_options = '\n'.join(f'{i + 1}) {c}' for i, c in enumerate(CONCEPTS))
+    prompt = f'Select the concept:\n{concept_options}\nChoice'
+    return click.option('--concept', prompt=prompt, type=click.IntRange(1, len(CONCEPTS)+1))(func)
 
 
 # Colors

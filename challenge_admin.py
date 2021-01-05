@@ -2,19 +2,20 @@ import sys
 import os
 import click
 import json
+from slugify import slugify
 from strtest import str_test
 
 from config import CHALLENGES, RAW_DIR, DETAILS, QUESTION, TESTS, CONCEPTS
-from cmd_utils import success, danger, info, create_file, load_file
+from cmd_utils import success, danger, info, create_file, load_file, choose_concept, open_in_editor
 
 
-TEMPLATE_DETAILS = '''{
-    "title": "",
+TEMPLATE_DETAILS = '''{{
+    "title": "{title}",
     "published": true,
     "terminal": true,
-    "function_name": null,
-    "concept": null
-}
+    "function_name": {function_name},
+    "concept": {concept}
+}}
 '''
 
 TEMPLATE_TESTS = '''"""
@@ -50,8 +51,27 @@ class TestCase(str_test.TestCaseWrapper):
 '''
 
 
-@click.argument('slug')
-def new_challenge(slug):
+@choose_concept
+def new_challenge(concept):
+    concept = f'"{CONCEPTS[concept-1]}"'
+
+    title = click.prompt('Title').strip()
+    if not title:
+        danger(f'Title cannot be empty')
+        sys.exit()
+
+    slug = click.prompt('Slug', default=slugify(title)).strip()
+    if not slug:
+        danger(f'Slug cannot be empty')
+        sys.exit()
+
+    function_name = click.prompt('Function name').strip()
+    if function_name:
+        function_name = f'"{function_name}"'
+    else:
+        function_name = 'null'
+
+
     info('Creating challenge', slug)
     ch_dir = CHALLENGES / slug
     if ch_dir.is_dir():
@@ -60,11 +80,15 @@ def new_challenge(slug):
 
     os.mkdir(ch_dir)
     (ch_dir / RAW_DIR / slug).mkdir(parents=True, exist_ok=True)
-    create_file(ch_dir / DETAILS, TEMPLATE_DETAILS)
+    create_file(ch_dir / DETAILS, TEMPLATE_DETAILS.format(title=title, function_name=function_name, concept=concept))
     create_file(ch_dir / QUESTION)
+    open_in_editor(ch_dir / QUESTION)
     create_file(ch_dir / TESTS, TEMPLATE_TESTS)
+    open_in_editor(ch_dir / TESTS)
     create_file(ch_dir / 'solution.py')
+    open_in_editor(ch_dir / 'solution.py')
     create_file(ch_dir / 'wrong.py')
+    open_in_editor(ch_dir / 'wrong.py')
 
 
 @click.argument('challenge_name', default=None, required=False)
