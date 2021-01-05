@@ -1,0 +1,7 @@
+{
+    "title": "Verifica palíndromo",
+    "published": true,
+    "terminal": true,
+    "function_name": "eh_palindromo",
+    "concept": "fatiamento"
+}

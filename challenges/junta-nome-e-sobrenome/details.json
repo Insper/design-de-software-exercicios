@@ -1,0 +1,7 @@
+{
+    "title": "Junta nome e sobrenome",
+    "published": true,
+    "terminal": true,
+    "function_name": "junta_nome_sobrenome",
+    "concept": "lista"
+}

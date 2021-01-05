@@ -1,0 +1,7 @@
+{
+    "title": "Classifica faixas etárias",
+    "published": true,
+    "terminal": true,
+    "function_name": "agrupa_por_idade",
+    "concept": "dicionario"
+}

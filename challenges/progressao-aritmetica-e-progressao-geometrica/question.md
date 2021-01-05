@@ -1,0 +1,1 @@
+Escreva uma função que recebe uma lista de números e devolve "PA", se ela for uma progressão aritmética, "PG", se for uma progressão geométrica, e "NA" se não for nenhuma das duas. Caso a sequência seja tanto uma PA quanto uma PG, devolva "AG".

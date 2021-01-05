@@ -1,0 +1,1 @@
+Faça uma função que converte temperaturas em Celsius para Fahrenheit.

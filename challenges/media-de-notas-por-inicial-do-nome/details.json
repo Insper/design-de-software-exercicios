@@ -1,0 +1,7 @@
+{
+    "title": "Média de notas por inicial do nome",
+    "published": true,
+    "terminal": true,
+    "function_name": "medias_por_inicial",
+    "concept": "dicionario"
+}

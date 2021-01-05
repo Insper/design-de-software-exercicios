@@ -1,0 +1,7 @@
+{
+    "title": "Bairro mais custoso",
+    "published": true,
+    "terminal": true,
+    "function_name": "bairro_mais_custoso",
+    "concept": "dicionario"
+}

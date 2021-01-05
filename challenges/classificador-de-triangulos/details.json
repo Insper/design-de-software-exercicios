@@ -1,0 +1,7 @@
+{
+    "title": "Classificador de triângulos",
+    "published": true,
+    "terminal": true,
+    "function_name": "classifica_triangulo",
+    "concept": "if"
+}

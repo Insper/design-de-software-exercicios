@@ -1,0 +1,1 @@
+Escreva um programa que pergunta para o usuário o valor da conta do restaurante e imprime: <code>"Valor da conta com 10%: R$ X.YZ"</code>, onde <code>X.YZ</code> é um número com exatamente duas casas decimais.

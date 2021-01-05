@@ -1,0 +1,7 @@
+{
+    "title": "Quantidade de primos no intervalo",
+    "published": true,
+    "terminal": true,
+    "function_name": "primos_entre",
+    "concept": "laco"
+}

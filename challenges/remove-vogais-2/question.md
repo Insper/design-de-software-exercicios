@@ -1,0 +1,1 @@
+Faça uma função que recebe uma string composta somente por letras minúsculas e a devolve removendo as vogais.

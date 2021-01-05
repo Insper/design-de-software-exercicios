@@ -1,0 +1,1 @@
+Faça uma função que recebe uma lista de números e retorna a string `'ímpar'`, `'par'` ou `'misturado'` se ela tiver, respectivamente, só números ímpares, só números pares, ou números dos dois tipos. Se a lista for vazia ela deve retornar misturado.

@@ -1,0 +1,7 @@
+{
+    "title": "Preço do livro",
+    "published": true,
+    "terminal": true,
+    "function_name": "verifica_preco",
+    "concept": "dicionario"
+}

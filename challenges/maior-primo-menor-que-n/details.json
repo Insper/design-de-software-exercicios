@@ -1,0 +1,7 @@
+{
+    "title": "Maior primo menor que N",
+    "published": true,
+    "terminal": true,
+    "function_name": "maior_primo_menor_que",
+    "concept": "laco"
+}

@@ -1,0 +1,1 @@
+Faça uma função que recebe uma lista de números e devolve a soma dos números ímpares contidos nela.

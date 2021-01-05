@@ -1,0 +1,5 @@
+dia = int(input())
+horas = int(input())
+minutos = int(input())
+segundos = int(input())
+print(3600*24*dia+3600*horas+60*minutos+segundos)

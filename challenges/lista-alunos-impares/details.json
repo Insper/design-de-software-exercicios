@@ -1,0 +1,7 @@
+{
+    "title": "Lista alunos ímpares",
+    "published": true,
+    "terminal": true,
+    "function_name": "alunos_impares",
+    "concept": "fatiamento"
+}

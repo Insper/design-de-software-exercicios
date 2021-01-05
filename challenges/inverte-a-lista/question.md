@@ -1,0 +1,1 @@
+Faça uma função que recebe uma lista e devolve a lista invertida. Observação: a sua solução não pode usar *slicing* ou alguma outra função pronta do Python.

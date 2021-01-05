@@ -1,0 +1,7 @@
+{
+    "title": "Rimas",
+    "published": true,
+    "terminal": true,
+    "function_name": "classifica_rima",
+    "concept": "string"
+}

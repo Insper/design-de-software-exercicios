@@ -1,0 +1,1 @@
+Escreva uma função que recebe um número $n$ e retorna uma lista com os $n$ primeiros números primos em ordem crescente (adaptado do Ex. 5.24 do livro do Nilo Ney).

@@ -1,0 +1,7 @@
+{
+    "title": "Login disponível",
+    "published": true,
+    "terminal": true,
+    "function_name": "login_disponivel",
+    "concept": "string"
+}

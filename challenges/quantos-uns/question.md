@@ -1,0 +1,1 @@
+Escreva uma função que recebe um número e devolve a quantidade de vezes que o algarismo 1 ocorre nesse número. *Ex:* 1030110641 tem 4 ocorrências do algarismo 1.

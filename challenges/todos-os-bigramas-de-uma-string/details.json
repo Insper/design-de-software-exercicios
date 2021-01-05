@@ -1,0 +1,7 @@
+{
+    "title": "Todos os bigramas de uma string",
+    "published": true,
+    "terminal": true,
+    "function_name": "acha_bigramas",
+    "concept": "string"
+}

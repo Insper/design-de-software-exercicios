@@ -1,0 +1,1 @@
+Escreva uma função que recebe um número representando um ano e devolve `True` se um ano é bissexto e `False` caso contrário.

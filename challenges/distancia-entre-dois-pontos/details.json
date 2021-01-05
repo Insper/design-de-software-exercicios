@@ -1,0 +1,7 @@
+{
+    "title": "Distância entre dois pontos",
+    "published": true,
+    "terminal": true,
+    "function_name": "distancia_euclidiana",
+    "concept": "funcao"
+}

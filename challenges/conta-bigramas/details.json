@@ -1,0 +1,7 @@
+{
+    "title": "Conta bigramas",
+    "published": true,
+    "terminal": true,
+    "function_name": "conta_bigramas",
+    "concept": "dicionario"
+}

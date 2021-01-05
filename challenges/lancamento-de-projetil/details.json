@@ -1,0 +1,7 @@
+{
+    "title": "Lançamento de projétil",
+    "published": true,
+    "terminal": true,
+    "function_name": "calcula_distancia_do_projetil",
+    "concept": "funcao"
+}

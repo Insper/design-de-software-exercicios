@@ -1,0 +1,7 @@
+{
+    "title": "Tempo de conclusão de 100 metros rasos",
+    "published": true,
+    "terminal": true,
+    "function_name": "calcula_tempo",
+    "concept": "dicionario"
+}

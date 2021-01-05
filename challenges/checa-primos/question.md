@@ -1,0 +1,1 @@
+Faça uma função que recebe uma lista de números e devolve um dicionário no qual as chaves são os números da lista e os valores são um booleano indicando se aquele número é primo ou não.

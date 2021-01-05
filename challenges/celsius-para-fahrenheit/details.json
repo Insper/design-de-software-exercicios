@@ -1,0 +1,7 @@
+{
+    "title": "Celsius para Fahrenheit",
+    "published": true,
+    "terminal": true,
+    "function_name": "celsius_para_fahrenheit",
+    "concept": "funcao"
+}

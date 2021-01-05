@@ -1,0 +1,1 @@
+Faça uma função que recebe uma lista de números reais e retorna a soma de seus valores.

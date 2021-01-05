@@ -1,0 +1,1 @@
+Faça uma função que recebe dois dicionários e devolve uma lista contendo os valores que estão presentes em ambos os dicionários.

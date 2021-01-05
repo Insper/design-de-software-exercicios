@@ -1,0 +1,1 @@
+Escreva um programa que pergunta números para o usuário e, depois que o usuário digita o número 0 (zero), imprime a soma.

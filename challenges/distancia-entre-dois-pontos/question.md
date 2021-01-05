@@ -1,0 +1,1 @@
+Faça uma função que recebe 4 números, $x_1$, $y_1$, $x_2$, $y_2$, e devolve a distância entre os pontos $(x_1, y_1)$ e $(x_2, y_2)$.

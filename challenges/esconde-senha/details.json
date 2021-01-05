@@ -1,0 +1,7 @@
+{
+    "title": "Esconde senha",
+    "published": true,
+    "terminal": true,
+    "function_name": "esconde_senha",
+    "concept": "string"
+}

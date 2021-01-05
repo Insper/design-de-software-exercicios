@@ -1,0 +1,7 @@
+{
+    "title": "Lista estritamente crescente",
+    "published": true,
+    "terminal": true,
+    "function_name": "estritamente_crescente",
+    "concept": "lista"
+}

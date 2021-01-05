@@ -1,0 +1,1 @@
+Faça uma função que recebe uma lista de números reais e retorna uma nova lista contendo apenas os números estritamente positivos da lista original.

@@ -1,0 +1,7 @@
+{
+    "title": "Filtra positivos",
+    "published": true,
+    "terminal": true,
+    "function_name": "filtra_positivos",
+    "concept": "lista"
+}

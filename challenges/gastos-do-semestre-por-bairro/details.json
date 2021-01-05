@@ -1,0 +1,7 @@
+{
+    "title": "Gastos do semestre por bairro",
+    "published": true,
+    "terminal": true,
+    "function_name": "total_do_semestre_por_bairro",
+    "concept": "dicionario"
+}

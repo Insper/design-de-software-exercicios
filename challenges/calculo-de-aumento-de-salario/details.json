@@ -1,0 +1,7 @@
+{
+    "title": "Cálculo de aumento de salário",
+    "published": true,
+    "terminal": true,
+    "function_name": "calcula_aumento",
+    "concept": "if"
+}

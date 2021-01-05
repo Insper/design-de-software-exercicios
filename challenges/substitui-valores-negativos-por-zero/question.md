@@ -1,0 +1,1 @@
+Faça uma função que varre uma lista de inteiros e troca os elementos negativos por zero. Sua função recebe uma lista como argumento e deve retornar a lista com os valores substituídos.

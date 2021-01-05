@@ -1,0 +1,7 @@
+{
+    "title": "Palavra mais frequente",
+    "published": true,
+    "terminal": true,
+    "function_name": "mais_frequente",
+    "concept": "dicionario"
+}

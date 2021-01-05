@@ -1,0 +1,7 @@
+{
+    "title": "Estimando o valor de pi (versão 2)",
+    "published": true,
+    "terminal": true,
+    "function_name": "PiWallis",
+    "concept": "laco"
+}

@@ -1,0 +1,7 @@
+{
+    "title": "Lista caracteres",
+    "published": true,
+    "terminal": true,
+    "function_name": "lista_caracteres",
+    "concept": "string"
+}

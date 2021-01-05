@@ -1,0 +1,7 @@
+{
+    "title": "Lista crescente ou decrescente",
+    "published": true,
+    "terminal": true,
+    "function_name": "classifica_lista",
+    "concept": "lista"
+}

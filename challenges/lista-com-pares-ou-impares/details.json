@@ -1,0 +1,7 @@
+{
+    "title": "Lista com pares ou ímpares",
+    "published": true,
+    "terminal": true,
+    "function_name": "verifica_lista",
+    "concept": "lista"
+}

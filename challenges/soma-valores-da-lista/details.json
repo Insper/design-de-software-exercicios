@@ -1,0 +1,7 @@
+{
+    "title": "Soma valores da lista",
+    "published": true,
+    "terminal": true,
+    "function_name": "soma_valores",
+    "concept": "lista"
+}

@@ -1,0 +1,1 @@
+Faça uma função que recebe uma string contendo um e-mail válido e retorne o nome do usuário. Dica: use a função do [exercício 62](/exercicio/62).

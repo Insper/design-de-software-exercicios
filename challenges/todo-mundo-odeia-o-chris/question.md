@@ -1,0 +1,1 @@
+Escreva um <b>programa</b> que pergunta o nome do usuário e imprime <code>"Olá, NOME"</code>, onde <code>NOME</code> é o nome do usuário. A menos que o nome do usuário seja <code>Chris</code>. Neste caso, imprima <code>"Todo mundo odeia o Chris"</code>.

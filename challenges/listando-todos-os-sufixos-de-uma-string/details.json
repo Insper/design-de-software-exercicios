@@ -1,0 +1,7 @@
+{
+    "title": "Listando todos os sufixos de uma string",
+    "published": true,
+    "terminal": true,
+    "function_name": "lista_sufixos",
+    "concept": "fatiamento"
+}

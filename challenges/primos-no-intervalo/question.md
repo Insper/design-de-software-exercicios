@@ -1,0 +1,1 @@
+Faça uma função que recebe dois números $a$ e $b$ e devolve uma lista com todos os números primos $p$ tais que $a \leq p \leq b$ em ordem crescente.

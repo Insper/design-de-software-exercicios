@@ -1,0 +1,7 @@
+{
+    "title": "Verifica lista crescente",
+    "published": true,
+    "terminal": true,
+    "function_name": "eh_crescente",
+    "concept": "lista"
+}

@@ -1,0 +1,7 @@
+{
+    "title": "Compras da semana",
+    "published": true,
+    "terminal": true,
+    "function_name": "compras_da_semana",
+    "concept": "dicionario"
+}

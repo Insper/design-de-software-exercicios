@@ -1,0 +1,7 @@
+{
+    "title": "Inverte dicionário",
+    "published": true,
+    "terminal": true,
+    "function_name": "inverte_dicionario",
+    "concept": "dicionario"
+}

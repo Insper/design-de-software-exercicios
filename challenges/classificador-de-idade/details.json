@@ -1,0 +1,7 @@
+{
+    "title": "Classificador de idade",
+    "published": true,
+    "terminal": true,
+    "function_name": "classifica_idade",
+    "concept": "if"
+}

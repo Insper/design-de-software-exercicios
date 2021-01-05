@@ -1,0 +1,7 @@
+{
+    "title": "Estimando o valor de pi",
+    "published": true,
+    "terminal": true,
+    "function_name": "calcula_pi",
+    "concept": "laco"
+}

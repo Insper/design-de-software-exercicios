@@ -1,0 +1,7 @@
+{
+    "title": "Número igual ao índice",
+    "published": true,
+    "terminal": true,
+    "function_name": "numero_no_indice",
+    "concept": "lista"
+}

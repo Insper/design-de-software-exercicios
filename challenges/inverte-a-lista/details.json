@@ -1,0 +1,7 @@
+{
+    "title": "Inverte a lista",
+    "published": true,
+    "terminal": true,
+    "function_name": "inverte_lista",
+    "concept": "lista"
+}

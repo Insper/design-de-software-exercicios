@@ -1,0 +1,7 @@
+{
+    "title": "Repete asteriscos",
+    "published": true,
+    "terminal": true,
+    "function_name": "asteriscos",
+    "concept": "string"
+}

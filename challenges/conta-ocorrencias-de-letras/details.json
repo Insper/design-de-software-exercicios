@@ -1,0 +1,7 @@
+{
+    "title": "Conta ocorrências de letras",
+    "published": true,
+    "terminal": true,
+    "function_name": "conta_letras",
+    "concept": "dicionario"
+}

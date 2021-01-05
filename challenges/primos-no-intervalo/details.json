@@ -1,0 +1,7 @@
+{
+    "title": "Primos no intervalo",
+    "published": true,
+    "terminal": true,
+    "function_name": "primos_entre",
+    "concept": "lista"
+}

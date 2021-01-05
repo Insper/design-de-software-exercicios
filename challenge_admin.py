@@ -100,15 +100,17 @@ def validate_challenge(challenge_name=None):
         validate_challenge_dir(CHALLENGES / challenge_name)
     else:
         info('Testing all challenges')
-        ok = True
+        failures = []
         for ch_dir in CHALLENGES.iterdir():
             if not ch_dir.is_dir(): continue
             if not validate_challenge_dir(ch_dir):
-                ok = False
-        if ok:
-            success('Everything ok!')
+                failures.append(ch_dir.name)
+        if failures:
+            danger('Failed for the following challenges:')
+            for failure in failures:
+                danger(f'  {failure}')
         else:
-            danger('Failed for some validation')
+            success('Everything ok!')
 
 
 def validate_challenge_dir(ch_dir):

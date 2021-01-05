@@ -1,0 +1,7 @@
+{
+    "title": "Teste de maioridade",
+    "published": true,
+    "terminal": true,
+    "function_name": "verifica_idade",
+    "concept": "if"
+}

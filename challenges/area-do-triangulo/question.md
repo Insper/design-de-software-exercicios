@@ -1,0 +1,1 @@
+Faça uma função que calcula a área de um triângulo de base $b$ e altura $h$.

@@ -1,0 +1,7 @@
+{
+    "title": "Números primos",
+    "published": true,
+    "terminal": true,
+    "function_name": "eh_primo",
+    "concept": "laco"
+}
