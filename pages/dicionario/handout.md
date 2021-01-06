@@ -18,19 +18,27 @@ Discuta o código acima com um colega. Apresentem suas interpretações e depois
 
 Leia este bloco depois que tiver resolvido o exercício 1.
 
-1. Começamos o código criando uma lista na qual cada elemento é uma outra lista contendo dois elementos. O primeiro desses elementos é sempre um nome e o segundo é sempre o seu respectivo telefone;
-2. O usuário digita um nome;
-3. Para cada elemento `#!python nome_e_telefone` da `#!python lista` repetimos o bloco a seguir (note que a variável `#!python nome_e_telefone` sempre vai guardar uma lista com exatamente dois elementos, o nome e o telefone):
-    1. Armazenamos o primeiro elemento (o nome) de `#!python nome_e_telefone` em uma variável `#!python nome`;
-    2. Se o nome for igual ao nome digitado pelo usuário executamos o bloco a seguir:
-        1. Armazenamos o segundo elemento (o telefone) de `#!python nome_e_telefone` em uma variável `#!python telefone`;
-        2. Imprimimos o `#!python telefone` da pessoa selecionada
+<ol>
+    <li>Começamos o código criando uma lista na qual cada elemento é uma outra lista contendo dois elementos. O primeiro desses elementos é sempre um nome e o segundo é sempre o seu respectivo telefone;</li>
+    <li>O usuário digita um nome;</li>
+    <li>Para cada elemento <code>nome_e_telefone</code> da <code>lista</code> repetimos o bloco a seguir (note que a variável <code>nome_e_telefone</code> sempre vai guardar uma lista com exatamente dois elementos, o nome e o telefone):
+        <ol>
+            <li>Armazenamos o primeiro elemento (o nome) de <code>nome_e_telefone</code> em uma variável <code>nome</code>;</li>
+            <li>Se o nome for igual ao nome digitado pelo usuário executamos o bloco a seguir:
+                <ol>
+                    <li>Armazenamos o segundo elemento (o telefone) de <code>nome_e_telefone</code> em uma variável <code>telefone</code>;</li>
+                    <li>Imprimimos o <code>telefone</code> da pessoa selecionada</li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+</ol>
 
 :::
 
 :::admonition{type=danger title="Importante"}
 
-Mesmo depois de imprimir o telefone da pessoa selecionada, o código continua percorrendo os próximos elementos da lista até o fim.
+Mesmo depois de imprimir o telefone da pessoa selecionada, o código <b>continua percorrendo os próximos elementos da lista até o fim.</b>
 
 :::
 
@@ -42,7 +50,7 @@ No código acima, não seria mais fácil se eu pudesse acessar elementos de uma 
 
 Um dicionário pode armazenar uma quantidade arbitrária de elementos, assim como uma lista. A diferença é que não estamos limitados a utilizar números como os índices, em dicionários podemos indexar os elementos por quase qualquer coisa (floats, strings, etc.)! No exemplo da lista de contatos, poderíamos ter ao invés de uma lista de nomes e telefones indexados por números, uma lista de telefones indexada por nomes:
 
-![](list2dict.png)
+<img src="raw/dicionario/list2dict.png" width="70%" />
 
 O problema disso é que na lista a posição de cada elemento está claramente associada a um número: o primeiro elemento da lista é o 0, o segundo é o 1, o terceiro é o 2 e assim por diante. No dicionário essa associação entre o índice (no exemplo, o nome) e a localização de um valor (o telefone) não é igualmente clara. Independente da ordem dos elementos no dicionário queremos utilizar os nomes para acessar os telefones. Por isso, ao criar um dicionário precisamos ser explícitos sobre qual é o "índice" de cada valor adicionado. Fazemos isso utilizando o seguinte código (ainda utilizando o exemplo acima):
 
@@ -193,8 +201,10 @@ Assim como em listas, podemos remover um item utilizando o operador `#!python de
 
 Resolva os exercícios disponíveis no servidor para praticar o uso de dicionários. Algumas sugestões:
 
-- [146. Conta ocorrências de palavras](http://softdes.insper.edu.br/exercicio/146)
-- [147. Palavra mais frequente](http://softdes.insper.edu.br/exercicio/147)
-- [148. Conta ocorrências de letras](http://softdes.insper.edu.br/exercicio/148)
+<ul>
+    <li><a href="http://softdes.insper.edu.br/exercicio/146">146. Conta ocorrências de palavras</a></li>
+    <li><a href="http://softdes.insper.edu.br/exercicio/147">147. Palavra mais frequente</a></li>
+    <li><a href="http://softdes.insper.edu.br/exercicio/148">148. Conta ocorrências de letras</a></li>
+</ul>
 
 :::
