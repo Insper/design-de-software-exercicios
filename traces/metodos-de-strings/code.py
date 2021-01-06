@@ -1,0 +1,12 @@
+s = 'Engenharia Insper'
+pos = s.find('Ins')
+print(pos)
+pos = s.find('abobora')
+print(pos)
+t = s.replace('Ins', 'Su')
+print(t)
+print(s)
+p = s.split()
+print(p[1])
+q = ','.join(p)
+print(q)
