@@ -42,15 +42,17 @@ def validate_trace(slug=None):
         validate_trace_dir(TRACES / slug)
     else:
         info('Testing all trace challenges')
-        ok = True
+        failures = []
         for ch_dir in TRACES.iterdir():
             if not ch_dir.is_dir(): continue
             if not validate_trace_dir(ch_dir):
-                ok = False
-        if ok:
-            success('Everything ok!')
+                failures.append(ch_dir.name)
+        if failures:
+            danger('Failed for the following traces')
+            for failure in failures:
+                danger(f'  {failure}')
         else:
-            danger('Failed for some validation')
+            success('Everything ok!')
 
 
 @click.argument('slug', default=None, required=False)
