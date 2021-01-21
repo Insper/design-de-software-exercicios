@@ -1,4 +1,4 @@
-# Arquivos
+# 10. Arquivos
 
 :::admonition{type=info}
 
@@ -140,25 +140,25 @@ Abaixo você encontra um resumo dos principais métodos de arquivos. Para mais d
 
 :::admonition{type=exercise title="EXERCÍCIO 5"}
 
-Faça o [Exercício 158. Conta palavras no arquivo](http://softdes.insper.edu.br/exercicio/158).
+Faça o exercício :challenge{type="code" slug="conta-palavras-no-arquivo"}.
 
 :::
 
 :::admonition{type=exercise title="EXERCÍCIO 6"}
 
-Faça o [Exercício 85. Bananas no arquivo](http://softdes.insper.edu.br/exercicio/85).
+Faça o exercício :challenge{type="code" slug="bananas-no-arquivo"}.
 
 :::
 
 :::admonition{type=exercise title="EXERCÍCIO 7"}
 
-Faça o [Exercício 86. CSV para TSV](http://softdes.insper.edu.br/exercicio/86).
+Faça o exercício :challenge{type="code" slug="csv-para-tsv"}.
 
 :::
 
 :::admonition{type=exercise title="EXERCÍCIO 8"}
 
-Faça o [Exercício 87. Custo do churrasco](http://softdes.insper.edu.br/exercicio/87).
+Faça o exercício :challenge{type="code" slug="custo-do-churrasco"}.
 
 :::
 
@@ -186,6 +186,6 @@ Baixe o arquivo [`alunos.json`](raw/arquivo/alunos.json) disponível [neste link
 
 :::admonition{type=exercise title="EXERCÍCIO 10"}
 
-Faça o [Exercício 159. Valor total do estoque](http://softdes.insper.edu.br/exercicio/159).
+Faça o exercício :challenge{type="code" slug="valor-total-do-estoque"}.
 
 :::

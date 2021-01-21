@@ -1,0 +1,80 @@
+{
+  "topics": [
+    {
+      "slug": "introducao",
+      "title": "Introdução ao Python",
+      "concept": "variavel"
+    },
+    {
+      "slug": "funcao",
+      "title": "Funções",
+      "concept": "funcao"
+    },
+    {
+      "slug": "input",
+      "title": "Entrada e saída do terminal",
+      "concept": "input"
+    },
+    {
+      "slug": "if",
+      "title": "Desvios condicionais (if)",
+      "concept": "if"
+    },
+    {
+      "slug": "while",
+      "title": "Laços do tipo \"enquanto\" (while)",
+      "concept": "laco"
+    },
+    {
+      "slug": "lista",
+      "title": "Armazenamento de múltiplos dados em listas",
+      "concept": "lista"
+    },
+    {
+      "slug": "for",
+      "title": "Iterando em coleções com \"for\"",
+      "concept": "for"
+    },
+    {
+      "slug": "dicionario",
+      "title": "Armazenamento de chaves e valores em dicionários",
+      "concept": "dicionario"
+    },
+    {
+      "slug": "string",
+      "title": "Um pouco mais sobre strings",
+      "concept": "string"
+    },
+    {
+      "slug": "arquivo",
+      "title": "Armazenamento permanente em arquivos",
+      "concept": "arquivo"
+    },
+    {
+      "slug": "classe",
+      "title": "Introdução a classes e orientação a objetos",
+      "concept": "classe"
+    },
+    {
+      "slug": "pygame",
+      "title": "PyGame",
+      "concept": "pygame"
+    }
+  ],
+  "Dicas": [
+    {
+      "slug": "buscando-ajuda",
+      "title": "Buscando ajuda"
+    }
+  ],
+  "Tutoriais": [
+    {
+      "slug": "terminal-macos",
+      "title": "Usando o terminal (MacOS)"
+    },
+    {
+      "slug": "terminal-win",
+      "title": "Usando o terminal (Windows)"
+    }
+  ]
+}

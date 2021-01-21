@@ -1,4 +1,4 @@
-# Dicionários
+# 08. Dicionários
 
 O objetivo de aprendizado deste handout é que, ao final da atividade, você seja capaz de utilizar dicionários em seus programas em conjunto com as estruturas que vimos nas aulas anteriores (`#!python input`, `#!python if`, `#!python while`, `#!python for`, `#!python list`, etc.). Vamos começar com um aquecimento.
 
@@ -8,39 +8,26 @@ Analise o código abaixo:
 
 ::snip{file=raw/dicionario/telefones.py}
 
-:::admonition{type=exercise title="EXERCÍCIO 1"}
+::::admonition{type=exercise title="EXERCÍCIO 1"}
 
 Discuta o código acima com um colega. Apresentem suas interpretações e depois validem a compreensão com a descrição a seguir.
 
-:::
+:::admonition{type=info title="Leia este bloco depois que tiver discutido com seu colega" collapse}
 
-:::admonition{type=info}
-
-Leia este bloco depois que tiver resolvido o exercício 1.
-
-<ol>
-    <li>Começamos o código criando uma lista na qual cada elemento é uma outra lista contendo dois elementos. O primeiro desses elementos é sempre um nome e o segundo é sempre o seu respectivo telefone;</li>
-    <li>O usuário digita um nome;</li>
-    <li>Para cada elemento <code>nome_e_telefone</code> da <code>lista</code> repetimos o bloco a seguir (note que a variável <code>nome_e_telefone</code> sempre vai guardar uma lista com exatamente dois elementos, o nome e o telefone):
-        <ol>
-            <li>Armazenamos o primeiro elemento (o nome) de <code>nome_e_telefone</code> em uma variável <code>nome</code>;</li>
-            <li>Se o nome for igual ao nome digitado pelo usuário executamos o bloco a seguir:
-                <ol>
-                    <li>Armazenamos o segundo elemento (o telefone) de <code>nome_e_telefone</code> em uma variável <code>telefone</code>;</li>
-                    <li>Imprimimos o <code>telefone</code> da pessoa selecionada</li>
-                </ol>
-            </li>
-        </ol>
-    </li>
-</ol>
+1. Começamos o código criando uma lista na qual cada elemento é uma outra lista contendo dois elementos. O primeiro desses elementos é sempre um nome e o segundo é sempre o seu respectivo telefone;
+2. O usuário digita um nome;
+3. Para cada elemento `#!python nome_e_telefone` da `#!python lista` repetimos o bloco a seguir (note que a variável `#!python nome_e_telefone` sempre vai guardar uma lista com exatamente dois elementos, o nome e o telefone):
+    1. Armazenamos o primeiro elemento (o nome) de `#!python nome_e_telefone` em uma variável `#!python nome`;
+    2. Se o nome for igual ao nome digitado pelo usuário executamos o bloco a seguir:
+        1. Armazenamos o segundo elemento (o telefone) de `#!python nome_e_telefone` em uma variável `#!python telefone`;
+        2. Imprimimos o `#!python telefone` da pessoa selecionada
 
 :::
 
 :::admonition{type=danger title="Importante"}
-
 Mesmo depois de imprimir o telefone da pessoa selecionada, o código <b>continua percorrendo os próximos elementos da lista até o fim.</b>
-
 :::
+::::
 
 Acabamos de implementar uma lista de contatos!
 
@@ -82,7 +69,7 @@ Reescreva o código da lista de contatos (no começo do handout) para utilizar d
 
 :::admonition{type=exercise title="EXERCÍCIO 3"}
 
-Uma possível solução para o [exercício 2](#exercicio-2) pode ser encontrada no [[TESTE DE MESA] Lista de contatos](http://softdes.insper.edu.br/exercicio/145). Faça esse teste de mesa para consolidar sua compreensão.
+Uma possível solução para o [exercício 2](#exercicio-2) pode ser encontrada no exercício :challenge{type="trace" slug="lista-de-contatos"}. Faça esse teste de mesa para consolidar sua compreensão.
 
 :::
 
@@ -127,7 +114,7 @@ meu_dicionario['vida universo e tudo mais'] = 42
 
 :::admonition{type=exercise title="EXERCÍCIO 4"}
 
-Resolva o exercício [79. Lista para dicionário](http://softdes.insper.edu.br/exercicio/79).
+Resolva o exercício :challenge{type="code" slug="lista-para-dicionario"}.
 
 :::
 
@@ -151,7 +138,7 @@ Nesse caso, o programa vai imprimir: `#!python A palavra alface não existe no d
 
 :::admonition{type=exercise title="EXERCÍCIO 6"}
 
-Resolva o exercício [44. Mês para número](http://softdes.insper.edu.br/exercicio/44). Mesmo se você já o tiver resolvido, resolva novamente **utilizando um dicionário, sem `#!python while` ou `#!python for`**.
+Resolva o exercício :challenge{type="code" slug="mes-para-numero"}. Mesmo se você já o tiver resolvido, resolva novamente **utilizando um dicionário, sem `#!python while` ou `#!python for`**.
 
 :::
 
@@ -199,12 +186,6 @@ Assim como em listas, podemos remover um item utilizando o operador `#!python de
 
 :::admonition{type=exercise title="EXERCÍCIOS ADICIONAIS"}
 
-Resolva os exercícios disponíveis no servidor para praticar o uso de dicionários. Algumas sugestões:
-
-<ul>
-    <li><a href="http://softdes.insper.edu.br/exercicio/146">146. Conta ocorrências de palavras</a></li>
-    <li><a href="http://softdes.insper.edu.br/exercicio/147">147. Palavra mais frequente</a></li>
-    <li><a href="http://softdes.insper.edu.br/exercicio/148">148. Conta ocorrências de letras</a></li>
-</ul>
+Resolva os [outros exercícios](/dicionario/challenges) disponíveis no servidor para praticar o uso de dicionários.
 
 :::
