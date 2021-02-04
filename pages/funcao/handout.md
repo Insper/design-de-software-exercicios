@@ -1,8 +1,8 @@
 # 02. Código reutilizável com funções
 
-Já vimos como criar valores numéricos e de texto puro em Python (chamados em Python de "literais") e variáveis. Tudo isso parece muito com a boa e velha matemática. E já que estamos vendo todas essas relações, um outro conceito importante em matemática são funções. Por exemplo:
-
 <span id="f-mat"></span>
+
+Já vimos como criar valores numéricos e de texto puro em Python (chamados em Python de "literais") e variáveis. Tudo isso parece muito com a boa e velha matemática. E já que estamos vendo todas essas relações, um outro conceito importante em matemática são funções. Por exemplo:
 
 $$f(x) = 1.60934\cdot x$$
 
@@ -10,9 +10,7 @@ Essa função converte valores em milhas ($x$) para quilômetros. Por exemplo: $
 
 O Python também nos permite criar funções! Escrevendo a mesma função acima em Python:
 
-<span id="f-python"></span>
-
-::snip{file="raw/funcao/funcoes_def.py" showLineNumbers}
+::snip{file="raw/funcao/funcoes_def.py" showLineNumbers id="f-python"}
 
 Novamente temos muitas observações importantes. Vamos começar pelos nomes:
 
@@ -24,7 +22,7 @@ Novamente temos muitas observações importantes. Vamos começar pelos nomes:
 :::admonition{type="info" title="Indentação"}
 A indentação é crucial e Python e tem um significado especial. Ela é utilizada para indicar blocos de código. Portanto não se deve utilizar indentações a mais ou a menos, pois isso causará um erro na execução do programa.
 
-O uso de 4 espaços é outra padronização da comunidade Python. Se você usar 2, 3 ou qualquer outra quantidade de espaços (ou até mesmo o caractere ++tab++) o código funcionará da mesma forma. Desde que seja consistente, ou seja, escolha um formato e utilize-o em todo o seu programa. Recomendamos que você utilize 4 espaços para seguir o padrão da comunidade.
+O uso de 4 espaços é outra padronização da comunidade Python. Se você usar 2, 3 ou qualquer outra quantidade de espaços (ou até mesmo o caractere `tab`) o código funcionará da mesma forma. Desde que seja consistente, ou seja, escolha um formato e utilize-o em todo o seu programa. Recomendamos que você utilize 4 espaços para seguir o padrão da comunidade.
 :::
 
 Se você executar o código acima não vai acontecer nada. Nesse código nós estamos apenas **definindo** a função `#!python f` (por isso a palavra `#!python def`). Podemos entender a linha 1 como: "Python, **quando** eu pedir para você executar a função `#!python f`, passando um valor para `#!python x`, o que você deve fazer é: multiplicar o valor armazenado na variável `#!python x` por 1.60934 e guardar o resultado na variável `#!python y` e depois devolver o valor armazenado na variável `#!python y` como o resultado". Em outras palavras, é como se estivéssemos **criando um novo comando do Python** (assim como já temos o `#!python print`, por exemplo).
@@ -37,9 +35,7 @@ Essa ideia é a mesma que [apresentamos sobre a função `#!python print`](#prin
 
 Vamos então ver um exemplo de uso da nossa função `#!python f(x)`. Considere o código a seguir:
 
-<span id="f-programa">
-
-::snip{file="raw/funcao/funcoes.py" showLineNumbers}
+::snip{file="raw/funcao/funcoes.py" id="f-programa" showLineNumbers}
 
 Nas linhas 1 a 3 a função `#!python f(x)` é definida, ou seja, após a execução dessas linhas o Python sabe o que fazer sempre que precisarmos dessa função. Na linha 5, armazenamos o número 10 na variável `#!python a`. Na linha 6 ocorre a chamada da função. Vamos detalhar o que ocorre nessa linha:
 
