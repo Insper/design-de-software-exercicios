@@ -17,10 +17,10 @@ Discuta o código acima com um colega. Apresentem suas interpretações e depois
 1. Começamos o código criando uma lista na qual cada elemento é uma outra lista contendo dois elementos. O primeiro desses elementos é sempre um nome e o segundo é sempre o seu respectivo telefone;
 2. O usuário digita um nome;
 3. Para cada elemento `#!python nome_e_telefone` da `#!python lista` repetimos o bloco a seguir (note que a variável `#!python nome_e_telefone` sempre vai guardar uma lista com exatamente dois elementos, o nome e o telefone):
-    1. Armazenamos o primeiro elemento (o nome) de `#!python nome_e_telefone` em uma variável `#!python nome`;
-    2. Se o nome for igual ao nome digitado pelo usuário executamos o bloco a seguir:
-        1. Armazenamos o segundo elemento (o telefone) de `#!python nome_e_telefone` em uma variável `#!python telefone`;
-        2. Imprimimos o `#!python telefone` da pessoa selecionada
+   1. Armazenamos o primeiro elemento (o nome) de `#!python nome_e_telefone` em uma variável `#!python nome`;
+   2. Se o nome for igual ao nome digitado pelo usuário executamos o bloco a seguir:
+      1. Armazenamos o segundo elemento (o telefone) de `#!python nome_e_telefone` em uma variável `#!python telefone`;
+      2. Imprimimos o `#!python telefone` da pessoa selecionada
 
 :::
 
@@ -49,7 +49,7 @@ A princípio pode parecer um pouco assustador, mas não se preocupe, com um pouc
 
 ### Chaves e valores
 
-Talvez você tenha reparado que utilizamos aspas quando nos referíamos aos "índices" do dicionário. Na verdade, no dicionário chamamos os índices de **chaves** (em inglês: "*keys*") e os elementos armazenados de **valores** (em inglês: "*values*"). Vimos também que as chaves e valores estão associados. Esse par chave-valor é chamado de **item** (em inglês... também é "*item*"). Por exemplo, em:
+Talvez você tenha reparado que utilizamos aspas quando nos referíamos aos "índices" do dicionário. Na verdade, no dicionário chamamos os índices de **chaves** (em inglês: "_keys_") e os elementos armazenados de **valores** (em inglês: "_values_"). Vimos também que as chaves e valores estão associados. Esse par chave-valor é chamado de **item** (em inglês... também é "_item_"). Por exemplo, em:
 
 ```python
 idades = {'Sicrano': 18, 'Beltrano': 20}
@@ -69,7 +69,7 @@ Reescreva o código da lista de contatos (no começo do handout) para utilizar d
 
 :::admonition{type=exercise title="EXERCÍCIO 3"}
 
-Uma possível solução para o [exercício 2](#exercicio-2) pode ser encontrada no exercício :challenge{type="trace" slug="lista-de-contatos"}. Faça esse teste de mesa para consolidar sua compreensão.
+Uma possível solução para o exercício 2 pode ser encontrada no exercício :challenge{type="trace" slug="lista-de-contatos"}. Faça esse teste de mesa para consolidar sua compreensão.
 
 :::
 

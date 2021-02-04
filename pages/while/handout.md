@@ -15,12 +15,12 @@ Para começar, vamos implementar uma versão do jogo na qual o jogador só tem u
 Faça um programa que:
 
 1. Sorteia um número aleatório entre `#!python 1` e `#!python 20` e guarda numa variável;
-    - Use a função `#!python randint` da biblioteca `#!python random` (**dica**: procure a documentação na internet)
+   - Use a função `#!python randint` da biblioteca `#!python random` (**dica**: procure a documentação na internet)
 1. Pede ao jogador um número entre `#!python 1` e `#!python 20`
 1. Dê o feedback da resposta do jogador:
-    - Se o número digitado for menor que o número sorteado, escreva `#!python "Muito baixo"`;
-    - Caso contrário, se o número digitado for maior que o número sorteado, escreva `#!python "Muito alto"`;
-    - Caso contrário, escreva `#!python "Acertou"`.
+   - Se o número digitado for menor que o número sorteado, escreva `#!python "Muito baixo"`;
+   - Caso contrário, se o número digitado for maior que o número sorteado, escreva `#!python "Muito alto"`;
+   - Caso contrário, escreva `#!python "Acertou"`.
 
 :::
 
@@ -46,7 +46,7 @@ Seu código deveria ser similar a este:
 
 ::::admonition{type=exercise title="EXERCÍCIO 3"}
 
-Vamos preparar nosso código para que seja possível perguntar novamente se o aluno tem dúvidas caso ele já tenha respondido antes que sim. Adicione uma variável `#!python tem_duvidas` **logo no começo do programa**. *Inicialize* essa variável com (ou seja, faça ela receber inicialmente) o valor `#!python True`. Coloque todo o seu código original dentro de um `#!python if tem_duvidas:`.
+Vamos preparar nosso código para que seja possível perguntar novamente se o aluno tem dúvidas caso ele já tenha respondido antes que sim. Adicione uma variável `#!python tem_duvidas` **logo no começo do programa**. _Inicialize_ essa variável com (ou seja, faça ela receber inicialmente) o valor `#!python True`. Coloque todo o seu código original dentro de um `#!python if tem_duvidas:`.
 
 Além disso, se o aluno responder `#!python 'não'`, mude o valor da variável `#!python tem_duvidas` para `#!python False`, pois o aluno não tem mais dúvidas.
 
@@ -99,7 +99,7 @@ O `#!python while` funciona de maneira similar, mas ao final da execução do bl
 <img src="raw/while/while.png" alt="O `while` executa o bloco enquanto a condição for verdadeira" width="50%">
 
 :::admonition{type=exercise title="EXERCÍCIO 5"}
-Modifique o programa do [exercício 3](#exercicio-3) para que ele continue perguntando se o usuário tem dúvidas enquanto ele responder qualquer coisa diferente de `#!python 'não'`. **Dica**: basta trocar um dos `#!python if`s por um `#!python while`.
+Modifique o programa do exercício 3 para que ele continue perguntando se o usuário tem dúvidas enquanto ele responder qualquer coisa diferente de `#!python 'não'`. **Dica**: basta trocar um dos `#!python if`s por um `#!python while`.
 :::
 
 :::admonition{type=exercise title="EXERCÍCIO 6"}
@@ -110,7 +110,7 @@ O vídeo a seguir apresenta uma possível solução para o exercício anterior e
 
 :::admonition{type=exercise title="EXERCÍCIO 7"}
 
-Agora podemos voltar para o nosso jogo. Modifique o seu programa do [exercício 1](#exercicio-1) para que o jogador possa continuar chutando um valor enquanto o usuário não acertar. Em outras palavras, modifique o programa para que o jogador tenha tentativas infinitas.
+Agora podemos voltar para o nosso jogo. Modifique o seu programa do exercício 1 para que o jogador possa continuar chutando um valor enquanto o usuário não acertar. Em outras palavras, modifique o programa para que o jogador tenha tentativas infinitas.
 
 O vídeo a seguir apresenta algumas possíveis soluções: [https://youtu.be/Z-N5kzXHHO0](https://youtu.be/Z-N5kzXHHO0). Novamente, **consulte o vídeo somente depois de tentar resolver o exercício por conta própria**.
 
@@ -132,7 +132,7 @@ Você pode usar qualquer nome de variável para o contador. No nosso exemplo nó
 
 :::admonition{type=exercise title="EXERCÍCIO 9"}
 
-Modifique o código do [exercício 7](#exercicio-7) para mostrar ao final do jogo a quantidade de tentativas do jogador até ele descobrir o número correto.
+Modifique o código do exercício 7 para mostrar ao final do jogo a quantidade de tentativas do jogador até ele descobrir o número correto.
 
 O vídeo a seguir explica o padrão de uso do `#!python while` com contadores e apresenta uma possível solução para este exercício: [https://youtu.be/wBjnd2RaJKE](https://youtu.be/wBjnd2RaJKE). Como sempre, **consulte somente depois de tentar resolver o exercício**.
 
@@ -148,7 +148,7 @@ No exercício 8 temos um exemplo de como usar o `#!python while` para validar um
 
 :::admonition{type=exercise title="EXERCÍCIO 11"}
 
-Modifique o jogo de adivinha ([exercício 9](#exercicio-9)) para validar que a entrada do usuário é um número inteiro entre 1 e 20 (inclusive). Ou seja, antes de verificar se o jogador acertou o número é necessário validar a entrada. **Entradas inválidas não devem ser contabilizadas**.
+Modifique o jogo de adivinha (exercício 9) para validar que a entrada do usuário é um número inteiro entre 1 e 20 (inclusive). Ou seja, antes de verificar se o jogador acertou o número é necessário validar a entrada. **Entradas inválidas não devem ser contabilizadas**.
 
 Para uma possível solução, consulte o vídeo a seguir: [https://youtu.be/5IQDVYPi9As](https://youtu.be/5IQDVYPi9As).
 

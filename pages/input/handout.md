@@ -95,7 +95,7 @@ O comando `#!python int(3.14)` gerou o número inteiro `#!python 3`. Mas será q
 
 :::admonition{type=exercise title="EXERCÍCIO 4: Agora vai!"}
 
-Corrija o programa do exercício 3 sabendo que o `#!python input()` **sempre** devolve uma *string*, ou seja, o texto digitado pelo usuário e a nossa função `#!python soma(x, y)` recebe dois *números*.
+Corrija o programa do exercício 3 sabendo que o `#!python input()` **sempre** devolve uma _string_, ou seja, o texto digitado pelo usuário e a nossa função `#!python soma(x, y)` recebe dois _números_.
 
 :::
 
@@ -131,7 +131,7 @@ Não se preocupe se não entender esse trecho de código. Essa é a maneira anti
 
 ## Operações com strings
 
-No programa do [exercício 2](#exercicio-2) nós obtivemos um comportamento diferente do que esperávamos (se precisar, execute o programa novamente para relembrar). Nessa versão do programa, se o usuário digitar `#!python 4` e `#!python 2` o programa vai imprimir que a soma vale `#!python 42`. Vimos que isso ocorre porque a função `#!python input()` sempre devolve uma string, então o que o programa fez foi juntar a string `#!python '4'` com a string `#!python '2'`, obtendo a string `#!python '42'`. Essa operação de "juntar strings" é o que chamamos de **concatenação**.
+No programa do exercício 2 nós obtivemos um comportamento diferente do que esperávamos (se precisar, execute o programa novamente para relembrar). Nessa versão do programa, se o usuário digitar `#!python 4` e `#!python 2` o programa vai imprimir que a soma vale `#!python 42`. Vimos que isso ocorre porque a função `#!python input()` sempre devolve uma string, então o que o programa fez foi juntar a string `#!python '4'` com a string `#!python '2'`, obtendo a string `#!python '42'`. Essa operação de "juntar strings" é o que chamamos de **concatenação**.
 
 :::admonition{type=exercise title="EXERCÍCIO 6"}
 
@@ -171,7 +171,7 @@ Digite n: 3
 ***
 ```
 
-Para cumprir essa missão você precisa saber que a string `#!python "\n"` significa *"pule para a próxima linha"*. Por exemplo:
+Para cumprir essa missão você precisa saber que a string `#!python "\n"` significa _"pule para a próxima linha"_. Por exemplo:
 
 ```python
 print("abc\nde")

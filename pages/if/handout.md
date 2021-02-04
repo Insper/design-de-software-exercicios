@@ -53,7 +53,7 @@ Considere o programa a seguir. Antes de testar, discuta com um colega qual você
 
 :::
 
-As expressões acima utilizam *operadores relacionais* para comparar valores e o resultado dessas operações **sempre** é um valor booleano. A tabela a seguir resume os principais operadores relacionais:
+As expressões acima utilizam _operadores relacionais_ para comparar valores e o resultado dessas operações **sempre** é um valor booleano. A tabela a seguir resume os principais operadores relacionais:
 
 | **Operador**  | **Operação**   |
 | ------------- | -------------- |
@@ -89,7 +89,7 @@ Os valores `#!python 5` e `#!python 10` são recebidos pela função nas variáv
 
 ## E o "caso contrário"?
 
-Para corrigir o erro na nossa função, vamos voltar à descrição do problema inicial: uma função que devolve 1 caso `#!python x` seja maior que `#!python y` ou zero, caso contrário. Precisamos tratar esse *"caso contrário"*. Para isso existe o operador `#!python else`, que significa, literalmente, *"caso contrário"*.
+Para corrigir o erro na nossa função, vamos voltar à descrição do problema inicial: uma função que devolve 1 caso `#!python x` seja maior que `#!python y` ou zero, caso contrário. Precisamos tratar esse _"caso contrário"_. Para isso existe o operador `#!python else`, que significa, literalmente, _"caso contrário"_.
 
 ::::admonition{type=exercise title="EXERCÍCIO 7"}
 
@@ -108,12 +108,12 @@ Faça alguns testes variando a entrada para verificar se o programa faz o que vo
 ## Agora vai!
 
 :::admonition{type=exercise title="EXERCÍCIO 8"}
-Agora sim, podemos terminar nossa função. Modifique a função do [exercício 6](#exercicio-6) para que o programa volte a funcionar.
+Agora sim, podemos terminar nossa função. Modifique a função do exercício 6 para que o programa volte a funcionar.
 :::
 
 ## Encadeando condicionais
 
-É possível testar uma nova condição caso a anterior falhe, utilizando o operador `#!python elif`. Ele pode ser lido como *"senão, se"*. Vamos trabalhar com um exemplo.
+É possível testar uma nova condição caso a anterior falhe, utilizando o operador `#!python elif`. Ele pode ser lido como _"senão, se"_. Vamos trabalhar com um exemplo.
 
 :::admonition{type=exercise title="EXERCÍCIO 9"}
 
@@ -133,7 +133,7 @@ Discuta com um colega: por que podemos utilizar o `#!python else` para imprimir 
 :::
 
 :::admonition{type=exercise title="EXERCÍCIO 12"}
-Altere a função do [exercício 8](#exercicio-8) para que ela devolva `#!python 1` se `#!python x` for maior do que `#!python y`, `#!python 0` se `#!python x` for igual a `#!python y` ou `#!python -1`, se `#!python x` for menor do que `#!python y`.
+Altere a função do exercício 8 para que ela devolva `#!python 1` se `#!python x` for maior do que `#!python y`, `#!python 0` se `#!python x` for igual a `#!python y` ou `#!python -1`, se `#!python x` for menor do que `#!python y`.
 :::
 
 ## If's encadeados
@@ -154,7 +154,7 @@ Modifique a função acima para utilizar **exatamente** um `#!python if`, um `#!
 
 ## Operador `#!python and`
 
-Nos exercícios anteriores vimos como testar uma única condição, mas em muitos casos pode ser útil testar mais do que uma condição de uma vez. Por exemplo, um arco-íris ocorre se *está chovendo* **e** *fazendo sol*, simultaneamente. Ou seja:
+Nos exercícios anteriores vimos como testar uma única condição, mas em muitos casos pode ser útil testar mais do que uma condição de uma vez. Por exemplo, um arco-íris ocorre se _está chovendo_ **e** _fazendo sol_, simultaneamente. Ou seja:
 
 ::snip{file="raw/if/chuva_sol.py"}
 
@@ -164,7 +164,7 @@ Teste o programa acima, modificando os valores de `#!python esta_chovendo` e `#!
 
 ## Operador `#!python or`
 
-Em outros casos é suficiente que *pelo menos uma das condições for satisfeita*. Por exemplo: uma pessoa paga meia entrada no teatro se *for estudante* **ou** *for idosa*. Ou seja:
+Em outros casos é suficiente que _pelo menos uma das condições for satisfeita_. Por exemplo: uma pessoa paga meia entrada no teatro se _for estudante_ **ou** _for idosa_. Ou seja:
 
 ::snip{file="raw/if/paga_meia.py"}
 

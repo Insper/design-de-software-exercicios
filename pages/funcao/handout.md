@@ -1,7 +1,5 @@
 # 02. Código reutilizável com funções
 
-<span id="f-mat"></span>
-
 Já vimos como criar valores numéricos e de texto puro em Python (chamados em Python de "literais") e variáveis. Tudo isso parece muito com a boa e velha matemática. E já que estamos vendo todas essas relações, um outro conceito importante em matemática são funções. Por exemplo:
 
 $$f(x) = 1.60934\cdot x$$
@@ -10,7 +8,7 @@ Essa função converte valores em milhas ($x$) para quilômetros. Por exemplo: $
 
 O Python também nos permite criar funções! Escrevendo a mesma função acima em Python:
 
-::snip{file="raw/funcao/funcoes_def.py" showLineNumbers id="f-python"}
+::snip{file="raw/funcao/funcoes_def.py" showLineNumbers}
 
 Novamente temos muitas observações importantes. Vamos começar pelos nomes:
 
@@ -29,13 +27,13 @@ Se você executar o código acima não vai acontecer nada. Nesse código nós es
 
 ## Chamando funções em Python
 
-Considere novamente a função matemática $f(x)$ [vista acima](#f-mat). Note que não existe um valor, ou resultado, para $f(x)$ a não ser que você defina quanto vale o $x$. Da mesma forma, não existe um resultado, ou valor de retorno, para a função [`#!python f(x)` no Python](#f-python) a não ser que definamos um valor para `#!python x`.
+Considere novamente a função matemática $f(x)$ vista acima. Note que não existe um valor, ou resultado, para $f(x)$ a não ser que você defina quanto vale o $x$. Da mesma forma, não existe um resultado, ou valor de retorno, para a função `#!python f(x)` no Python a não ser que definamos um valor para `#!python x`.
 
-Essa ideia é a mesma que [apresentamos sobre a função `#!python print`](#print-arg), ou seja, precisamos de uma informação adicional. Uma vez que definimos uma função é como se ela se tornasse parte da linguagem Python. Assim, para esse contexto introdutório, não existe nenhuma diferença entre a função `#!python print` e a função `#!python f(x)` em termos de importância. Ambas são comandos disponíveis no Python para o programador utilizar em seu código.
+Essa ideia é a mesma que apresentamos sobre a função `#!python print`, ou seja, precisamos de uma informação adicional. Uma vez que definimos uma função é como se ela se tornasse parte da linguagem Python. Assim, para esse contexto introdutório, não existe nenhuma diferença entre a função `#!python print` e a função `#!python f(x)` em termos de importância. Ambas são comandos disponíveis no Python para o programador utilizar em seu código.
 
 Vamos então ver um exemplo de uso da nossa função `#!python f(x)`. Considere o código a seguir:
 
-::snip{file="raw/funcao/funcoes.py" id="f-programa" showLineNumbers}
+::snip{file="raw/funcao/funcoes.py" showLineNumbers}
 
 Nas linhas 1 a 3 a função `#!python f(x)` é definida, ou seja, após a execução dessas linhas o Python sabe o que fazer sempre que precisarmos dessa função. Na linha 5, armazenamos o número 10 na variável `#!python a`. Na linha 6 ocorre a chamada da função. Vamos detalhar o que ocorre nessa linha:
 
@@ -58,7 +56,7 @@ Faça o exercício :challenge{type="trace" slug="converte-milhas-para-km"} para 
 :::
 
 :::admonition{type="info" title="Dica Pro: use bons nomes!"}
-No dia seguinte você abre [esse programa](#f-programa). O que faz mesmo esse código? Acredite, é mais comum do que você imagina. Enquanto estamos desenvolvendo o programa temos muito claro para quê cada variável serve, mas não precisamos de muito tempo para olhar o mesmo código e não ter ideia do que está acontecendo.
+No dia seguinte você abre o programa mostrado acima. O que faz mesmo esse código? Acredite, é mais comum do que você imagina. Enquanto estamos desenvolvendo o programa temos muito claro para quê cada variável serve, mas não precisamos de muito tempo para olhar o mesmo código e não ter ideia do que está acontecendo.
 
 Por isso, use nomes que façam sentido para as suas variáveis e funções. Quando não estiver claro o suficiente, adicione comentários, mas as vezes boas escolhas de nomes dispensam comentários no código. Considere a versão a seguir (ela faz exatamente o mesmo que o nosso código anterior):
 
@@ -71,7 +69,7 @@ Neste exemplo os comentários poderiam até ser removidos, pois o nome da funç�
 :::admonition{type=exercise title="EXERCÍCIO 2"}
 Faça o exercício :challenge{type="code" slug="celsius-para-fahrenheit"}.
 
-Primeiro resolva em seu próprio computador, fazendo testes com alguns valores específicos (ex: 0 e 100). Depois disso, envie apenas a definição da função, sem o código que chama a função. Por exemplo, no [programa que desenvolvemos acima](#f-programa), você enviaria apenas as linhas 1 a 3.
+Primeiro resolva em seu próprio computador, fazendo testes com alguns valores específicos (ex: 0 e 100). Depois disso, envie apenas a definição da função, sem o código que chama a função. Por exemplo, no programa que desenvolvemos acima, você enviaria apenas as linhas 1 a 3.
 
 **Sempre que o exercício do servidor pedir uma função você deve enviar apenas a definição da função, sem o código de teste que chama a função.**
 :::
