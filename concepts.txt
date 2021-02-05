@@ -10,3 +10,4 @@ Fatiamento,fatiamento,9
 Dicionário,dicionario,10
 Arquivo,arquivo,11
 Classe,classe,12
+PyGame,pygame,13
