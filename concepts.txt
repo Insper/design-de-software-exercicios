@@ -4,8 +4,9 @@ Input,input,3
 If,if,4
 Laço,laco,5
 Lista,lista,6
-String,string,7
-Fatiamento,fatiamento,8
-Dicionário,dicionario,9
-Arquivo,arquivo,10
-Classe,classe,11
+For,for,7
+String,string,8
+Fatiamento,fatiamento,9
+Dicionário,dicionario,10
+Arquivo,arquivo,11
+Classe,classe,12
