@@ -138,10 +138,10 @@ def validate_challenge_details(ch_dir):
     except json.decoder.JSONDecodeError:
         raise AssertionError(f'File {details_file} is not a valid JSON.')
     assert isinstance(details, dict), f'File {details_file} should be a JSON dictionary.'
-    assert details.get('title'), f'File {details_file} should have a key "title".'
-    assert details.get('published'), f'File {details_file} should have a key "published".'
-    assert details.get('terminal'), f'File {details_file} should have a key "terminal".'
-    assert details.get('concept'), f'File {details_file} should have a key "concept".'
+    assert 'title' in details, f'File {details_file} should have a key "title".'
+    assert 'published' in details, f'File {details_file} should have a key "published".'
+    assert 'terminal' in details, f'File {details_file} should have a key "terminal".'
+    assert 'concept' in details, f'File {details_file} should have a key "concept".'
     concept = details['concept']
     assert concept in CONCEPTS, f'The concept {concept} does not exist'
     return details

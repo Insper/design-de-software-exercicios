@@ -2,3 +2,4 @@ strtest
 autotracer
 click
 colorama
+python-slugify
